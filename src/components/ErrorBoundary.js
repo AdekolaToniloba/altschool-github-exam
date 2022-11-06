@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./error.css";
 import Scarecrow from "./Scarecrow.png";
-import { Link } from "react-router-dom";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -38,10 +37,10 @@ class ErrorBoundary extends Component {
                 unavailable.
               </p>
               <div class="button">
-                <Link className=" grow" to="/">
+                <button className=" grow" to="/">
                   {" "}
                   BACK TO HOMEPAGE
-                </Link>
+                </button>
               </div>
             </div>
           </div>

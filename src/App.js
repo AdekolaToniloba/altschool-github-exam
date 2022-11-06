@@ -3,8 +3,8 @@ import Repos from "./components/pages/Repos";
 import ReactPaginate from "react-paginate";
 import Pagination from "./components/Pagination";
 import axios from "axios";
-import Error from "./components/Error-404";
-import { Route, Routes } from "react-router-dom";
+import Error from "./components/ErrorBoundary";
+// import { Route, Routes } from "react-router-dom";
 import "./styles.css";
 
 // function App() {
@@ -57,6 +57,7 @@ const App = () => {
   // Change Page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   const changePage = ({ selected }) => {
+    // eslint-disable-next-line no-const-assign
     setCurrentPage = selected;
   };
 
